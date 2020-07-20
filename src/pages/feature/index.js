@@ -5,33 +5,31 @@ import { apiCall } from './feature.store';
 import { getAllCourses } from './feature.selectors';
 
 function FeatureName() {
-	const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-	const { details: { results = [] } = {} } = useSelector(({ FeatureStore }) =>
-		getAllCourses(FeatureStore)
-	);
+  const { details: { results = [] } = {} } = useSelector(({ FeatureStore }) =>
+    getAllCourses(FeatureStore)
+  );
 
-	useEffect(
-		() => {
-			function getPosts() {
-				dispatch(apiCall())
-			}
+  useEffect(() => {
+    function getPosts() {
+      dispatch(apiCall());
+    }
 
-			getPosts();
-		},
-		[dispatch]
-	);
+    getPosts();
+  }, [dispatch]);
 
-	return (
-		<div>
-			List
-			<br />
-			<hr />
-			{
-				results.map(r => <div>{r.id}. {r.title}</div>)
-			}
-		</div>
-	)
+  return (
+    <div>
+      Lists
+      <hr />
+      {results.map((r) => (
+        <div key={r.id}>
+          {r.id}. {r.title}
+        </div>
+      ))}
+    </div>
+  );
 }
 
-export default FeatureName
+export default FeatureName;
