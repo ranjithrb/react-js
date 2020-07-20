@@ -35,10 +35,10 @@ This structure is built on top of [Create React App](https://github.com/facebook
 
 ## Please follow the below steps to start the app.
 
-1. yarn install
-2. yarn start
+1. npm install
+2. npm start
 
 Note:
 
 1. Please refer CRA_README.md for CRA related commands.
-2. Use either npm or yarn and not both.
+2. Use either npm or yarn and not both. Here **npm** is the preferred one.
