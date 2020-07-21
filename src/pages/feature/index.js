@@ -25,7 +25,9 @@ function FeatureName() {
       <hr />
       {results.map((r) => (
         <div key={r.id}>
-          {r.id}. {r.title}
+          {r.id}
+          {'. '}
+          {r.title}
         </div>
       ))}
     </div>

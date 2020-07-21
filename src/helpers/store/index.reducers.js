@@ -4,8 +4,8 @@ import homeReducer from '../../pages/home/home.store';
 import featureReducer from '../../pages/feature/feature.store';
 
 const reducers = {
-	HomeStore: homeReducer,
-	FeatureStore: featureReducer,
+  HomeStore: homeReducer,
+  FeatureStore: featureReducer,
 };
 
 export default combineReducers(reducers);
