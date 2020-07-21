@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "streetsidesoftware.code-spell-checker",
+    "GitHub.vscode-pull-request-github",
+    "yzhang.markdown-all-in-one",
+    "nhoizey.gremlins",
+    "wayou.vscode-todo-highlight",
+    "christian-kohler.npm-intellisense",
+    "jpoissonnier.vscode-styled-components",
+    "mikestead.dotenv"
+  ],
+  "unwantedRecommendations": []
+}

@@ -1,0 +1,18 @@
+{
+  "cSpell.words": ["navigations", "vedham", "stylelint", "browserslist"],
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.rulers": [100, 140],
+  "editor.matchBrackets": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.disableLanguages": ["javascript", "javascriptreact", "js"]
+}
