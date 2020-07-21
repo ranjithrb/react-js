@@ -1,23 +1,26 @@
 import { lazy } from 'react';
 
-import Urls from './url.path';
+import { HomeUrl, FeatureUrl } from './url.path';
+import generateRandomUid from '../../helpers/services/uid.service';
 
-const Home = lazy(_ => import('./../../pages/home'));
-const Feature = lazy(_ => import('./../../pages/feature'));
+const Home = lazy(() => import('./../../pages/home'));
+const Feature = lazy(() => import('./../../pages/feature'));
 
-export default [
-	{
-		path: Urls.HomeUrl.path,
-		auth: true,
-		exact: true,
-		name: Urls.HomeUrl.name,
-		component: Home,
-	},
-	{
-		path: Urls.FeatureUrl.path,
-		auth: true,
-		exact: true,
-		name: Urls.FeatureUrl.name,
-		component: Feature,
-	},
+const publicRoutes = [
+  {
+    path: HomeUrl.path,
+    exact: true,
+    name: HomeUrl.name,
+    component: Home,
+    key: generateRandomUid(),
+  },
+  {
+    path: FeatureUrl.path,
+    exact: true,
+    name: FeatureUrl.name,
+    component: Feature,
+    key: generateRandomUid(),
+  },
 ];
+
+export default publicRoutes;
