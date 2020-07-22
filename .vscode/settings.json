@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["navigations", "vedham", "stylelint", "browserslist"],
+  "cSpell.words": ["navigations", "stylelint", "browserslist"],
   "[javascriptreact]": {
     "editor.formatOnSave": false
   },
